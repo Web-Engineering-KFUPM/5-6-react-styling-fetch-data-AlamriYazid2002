@@ -9,6 +9,7 @@ function UserCard({ user, onUserClick }) {
           <div className="user-avatar">
             {user.name.charAt(0)}
           </div>
+          <Button onClick={() => onUserClick(user)}>View Details</Button>
         </div>
 
         <Card.Title>{user.name}</Card.Title>
